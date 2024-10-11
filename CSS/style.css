@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: UrbanGrafite;
+    src: url(Fontes/Urban\ Graffiti.ttf);
+}
+
+:root {
+    --cor-padrao: #FFFFDB;
+
+    --cor-texto-padrao: #000000;
+    --cor-texto-link: #000000;
+
+    --cor-destaque-laranja: #FF9B54;
+    --cor-destaque-amarelo: #FFFCA8;
+
+    --cor-acao-vermelho: #BF211E;
+    --cor-acao-azul: #7984AF;
+
+    font-size: 16px;
+    --tamanho-texto-normal: 1rem;
+    --tamanho-texto-titulo: 4rem;
+    --tamanho-texto-subtitulo: 2rem;
+}
+
+body {
+    background-color: var(--cor-padrao);
+
+}
+
+main {
+    margin: 0 13.125vw;
+}
+
+.ignorar-margin {
+    margin: 0 -13.125vw;
+}
+
+
+/* Nav Bar Inicio */
+
+nav {
+    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+    width: 100vw;
+    display: flex;
+    padding: 1vh 0;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+nav img {
+    left: 1%;
+    top: 1%;
+    height: 6vh;
+}
+
+nav ul li a {
+    height: fit-content;
+    color: var(--cor-texto-link);
+}
+
+nav ul {
+    height: fit-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 7.813vw;
+    width: 100%;
+    padding: 0;
+    margin: 0 13.125vw;
+}
+
+/* Nav Bar Fim */
