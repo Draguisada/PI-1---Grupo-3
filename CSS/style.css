@@ -23,7 +23,12 @@
     --tamanho-texto-normal: 1rem;
     --tamanho-texto-titulo: 4rem;
     --tamanho-texto-subtitulo: 2rem;
+
+    /* Fonte padrão do site inteiro */
+    font-family: "Open Sans", sans-serif;
 }
+
+/* Configurações do site inteiro */
 
 body {
     background-color: var(--cor-padrao);
@@ -38,6 +43,25 @@ main {
     margin: 0 -13.125vw;
 }
 
+
+
+.titulo {
+    font-size: 100px;
+    font-family: UrbanGrafite;
+}
+.titulo > .background {
+    background: linear-gradient(180deg, var(--cor-destaque-laranja) 0%, rgba(57,57,57,1) 100%);
+    background-clip: text;
+    color: transparent;
+    z-index: 1;
+    position: absolute;
+}
+
+.titulo > .stroke {
+    color:black;
+    position: absolute;
+    font-size: 220px;
+}
 
 /* Nav Bar Inicio */
 
@@ -75,3 +99,4 @@ nav ul {
 }
 
 /* Nav Bar Fim */
+
