@@ -1,0 +1,25 @@
+@font-face {
+    font-family: UrbanGrafite;
+    src: url(Fontes/Urban\ Graffiti.ttf);
+}
+
+:root {
+    --cor-padrao: #FFFFDB;
+
+    --cor-texto-padrao: #000000;
+    --cor-texto-link: #000000;
+
+    --cor-destaque-laranja: #FF9B54;
+    --cor-destaque-amarelo: #FFFCA8;
+
+    --cor-acao-vermelho: #BF211E;
+    --cor-acao-azul: #7984AF;
+
+    font-size: 16px;
+    --tamanho-texto-normal: 1rem;
+    --tamanho-texto-titulo: 4rem;
+    --tamanho-texto-subtitulo: 2rem;
+
+    /* Fonte padrão do site inteiro */
+    font-family: "Open Sans", sans-serif;
+}
