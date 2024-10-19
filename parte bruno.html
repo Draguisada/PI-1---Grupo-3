@@ -18,13 +18,76 @@
         <li><a href="#sociocultura">Sociocultura e Brasil</a></li>
     </ul>
 </nav>
-    <div class="titulo">
-        <h1 class="background">O que é</h1>
-        <h1 class="stroke">O que é</h1>
-    </div>
-    
-    <p>falando algo</p>
+    <!-- O que é -->
+    <section id="oquee">
+        <div class="titulo">
+            <h1 class="background">O que é</h1>
+            <!-- <h1 class="stroke">O que é</h1> -->
+        </div>
 
+        <p>80 palavras  máximo para uma resumo, consectetur adipiscing elit. Cras nec mauris a dui aliquet efficitur id sit amet mauris. Vestibulum vitae venenatis urna. Suspendisse et neque sit amet nisi hendrerit accumsan id vitae lacus. Morbi ex nibh, tempus eu placerat et, dignissim lobortis nunc. Donec tempus sit amet erat ut dictum. Etiam sit amet orci quam. Donec at ornare lectus. Mauris interdum leo quis ipsum luctus, sed malesuada lectus venenatis.</p>
+    </section>
+
+    <!-- História -->
+    <section id="historia">
+
+        <div class="titulo">
+            <h1 class="background">História</h1>
+            <!-- <h1 class="stroke">O que é</h1> -->
+            <p>Quando passar o mouse em cima dos artistas irá mostrar o nome deles.  ante, ac finibus odio mollis in. Phasellus elementum pretium lorem, ut bibendum mi fringilla sit amet. Etiam ultricies lectus ut lorem varius, quis eleifend ante vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec lectus massa, accumsan vel hendrerit nec, sollicitudin at erat. Donec hendrerit mattis ligula a bibendum. Aenean sed metus laoreet, vehicula nisl ac, blandit lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+        </div>
+
+        <!-- Mudar escala das Imagens conforme ViewWidth muda -->
+
+        <div class="imagens">
+            <img src="https://placehold.co/368x234" alt="">
+            <img src="https://placehold.co/218x234" alt="">
+            <p>Lorem ipsum ante, ac finibus <br> odio mollis in. Phasellus elementum pretium lorem</p>
+            <img src="https://placehold.co/213x142" alt="">
+            <img src="https://placehold.co/183x144" alt="">
+            <img src="https://placehold.co/300x144" alt=""> 
+            <img src="https://placehold.co/289x144" alt="">
+            <img src="https://placehold.co/294x144" alt="">
+            <img src="https://placehold.co/195x144" alt="">
+            <img src="https://placehold.co/151x237" alt="">
+        </div>
+    </section>
+
+    <!-- Movimentos -->
+    <section id="movimentos">
+        <div class="titulo">
+            <h1 class="background">Movimentos</h1>
+            <!-- <h1 class="stroke">O que é</h1> -->
+            <div id="timeline">
+                <h3 onclick="changeSelected(this)" class="mov">Brooklyn</h3>
+                <h3 onclick="changeSelected(this)" class="mov">Guetos</h3>
+                <h3 onclick="changeSelected(this)" class="mov">Hip-Hop</h3>
+                <h3 onclick="changeSelected(this)" class="mov selected">Grafite</h3>
+                <h3 onclick="changeSelected(this)" class="mov">Dias atuais</h3>
+            </div>
+        </div>
+        
+        <div class="textos">
+            <!-- Primeira linha -->
+            <p>Falas breves sobre os movimentos do Break (Grafite, Decadas de 60 pra frente, Dias atuais)</p>
+            <br><br>
+            <!-- Desenvolvimento -->
+            <p>Está página irá ter uma linha do tempo aonde vai mudar com o scroll, mudando este texto e as imagens. Fazendo um efeito carossel nos subtitulos, id pretium sapien mollis. Vivamus pellentesque odio vitae magna auctor cursus. Etiam quis erat massa. 
+                Nunc nec diam cursus, luctus sapien nec, posuere massa. Morbi dictum sodales luctus. Curabitur consequat volutpat urna, in mattis turpis viverra eget.</p>
+            <br><br>
+            <!-- Final linha -->
+            <p>Aliquam in ante ut lectus rhoncus aliquam a id felis. Etiam iaculis hendrerit turpis. Sed mattis nunc sit amet enim molestie, in vestibulum nisi ullamcorper. In sollicitudin.</p>
+        </div>
+
+        <div class="imagens">
+            <img src="Imagens/Imagens/zin-movimento.png" alt="Artista Rodrigo Zin" id="hero-movimento">
+            <img src="https://placehold.co/600x300" alt="" class="imagens-movimento">
+            <img src="https://placehold.co/300x300" alt="" class="imagens-movimento">
+            <img src="https://placehold.co/300x300" alt="" class="imagens-movimento">
+        </div>
+
+
+    </section>
 
 
 <main>
@@ -32,4 +95,5 @@
 
 </main>
 </body>
+<script src="JS/script.js"></script>
 </html>
