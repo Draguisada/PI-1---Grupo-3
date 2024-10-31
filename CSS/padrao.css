@@ -1,0 +1,35 @@
+@font-face {
+    font-family: UrbanGrafite;
+    src: url(Fontes/Urban\ Graffiti.ttf);
+}
+
+:root {
+    --cor-padrao: #FFFFDB;
+
+    --cor-texto-padrao: #000000;
+    --cor-texto-link: #000000;
+
+    --cor-destaque-laranja: #FF9B54;
+    --cor-destaque-amarelo: #FFFCA8;
+
+    --cor-acao-vermelho: #BF211E;
+    --cor-acao-azul: #7984AF;
+
+    font-size: 16px;
+    --tamanho-texto-menor: 0.75rem;
+    --tamanho-texto-normal: 1rem;
+    --tamanho-texto-titulo: 4rem;
+    --tamanho-texto-subtitulo: 2rem;
+
+    /* Fonte padrão do site inteiro */
+    font-family: "Open Sans", sans-serif;
+
+    /* Tamanho de distância entre objetos */
+    --dist-xs: 0.25rem;
+    --dist-s: 0.50rem;
+    --dist-m: 1rem;
+    --dist-xm: 1.5rem;
+    --dist-xxm: 2rem;
+    --dist-l: 2.75rem;
+    --dist-xl: 3.25rem;
+}
