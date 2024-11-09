@@ -29,13 +29,14 @@ h1 {
     background-clip: text;
     color: transparent;
     z-index: 1;
+    /* text-shadow: 1px 1px 1px black; */
 }
 
 /* Nav Bar Inicio */
 
 nav {
     background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
-    width: 100vw;
+    width: 100%;
     display: flex;
     padding: 1vh 0;
     align-items: center;
@@ -74,27 +75,6 @@ section {
 
 
 
-
-/* História Inicio */
-
-#historia .titulo {
-    display: flex;
-    text-align: justify;
-}
-
-#historia .imagens {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-#historia .imagens p {
-    display: inline;
-}
-
-/* História Fim */
-
-
 /* Movimentos inicio */
 
 #movimentos {
@@ -118,7 +98,7 @@ section {
     color: #898989;
     font-size: var(--tamanho-texto-menor);
     font-style: italic;   
-    cursor: pointer;
+    
     
 }
 
@@ -126,6 +106,13 @@ section {
     transition: 0.2s;
     transition-timing-function: ease-in-out;
     transition-property: all;
+    cursor: pointer;
+}
+
+/* Movimentos inicio */
+
+#movimentos > * {
+    transition: 1s all;
 }
 
 #movimentos .selected {
@@ -134,6 +121,7 @@ section {
     font-weight: bold;
     text-decoration: underline;
     font-style: normal;   
+    min-height: 3rem;
 }
 
 #movimentos .textos {
@@ -155,4 +143,55 @@ section {
     z-index: -2;
 }
 
+#movimentos .textos p::first-letter {
+    font-size: 2rem;
+    font-family: UrbanGrafite;
+}
+
 /* Movimentos fim */
+
+
+/* História inicio */
+
+#historia .imagens img {
+    width: 100%;
+    
+}
+
+#historia .imagens {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15.3vw 12.3vw 12.3vw 15.3vw;
+    grid-template-rows: 25vh 19vh;
+    align-items: flex-end;
+    column-gap: 1.5vw;
+
+    
+}
+
+#historia .titulo {
+    display: flex;
+    text-align: justify;
+}
+
+#historia .titulo .background {
+    align-self: end;
+}
+
+#historia .imagens p {
+    display: inline;
+}
+
+
+
+
+#historia .imagens img[alt*="Dre"] {
+    align-self: baseline;
+}
+
+#historia .imagens img:last-of-type {
+    max-height: 100%;
+    width: auto;
+}
+
+/* História Fim */
