@@ -217,3 +217,7 @@ section {
     width: 16vw;
     min-width: 200px;
 }
+#movimentos .imagens{
+    width: 150px;
+    height: 150px;
+}
