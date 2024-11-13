@@ -195,3 +195,25 @@ section {
 }
 
 /* História Fim */
+
+/* redessociais */
+#redessociais {
+    margin-top: 10%;
+}
+
+#redessociais p {
+    text-align: justify;
+    width: 80%;
+    justify-self: center;
+}
+
+#redessociais .videos {
+    justify-content: space-between;
+    display: flex;
+    padding-top: var(--dist-xl);
+}
+
+#redessociais .videos video {
+    width: 16vw;
+    min-width: 200px;
+}
