@@ -73,6 +73,24 @@ section {
     margin: 5vh 13vw;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
+    z-index: 10;
+    position: relative;
+    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+}
+
+.footer-texto {
+    font-size: 16px;
+}
+
+.footer-logo img {
+    height: 100px; 
+}
+
 
 
 /* Movimentos inicio */
@@ -98,8 +116,6 @@ section {
     color: #898989;
     font-size: var(--tamanho-texto-menor);
     font-style: italic;   
-    
-    
 }
 
 #timeline h3 {
