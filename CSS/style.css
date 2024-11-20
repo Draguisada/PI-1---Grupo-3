@@ -76,9 +76,19 @@ nav ul {
 
 /* Nav Bar Fim */
 
+/* Header Início */
+
+.imagem-header {
+    width: 100%;
+}
+
+/* Header Fim */
+
 section {
     margin: 5vh 13vw;
 }
+
+/* Footer Início */
 
 footer {
     display: flex;
@@ -98,6 +108,7 @@ footer {
     height: 100px; 
 }
 
+<<<<<<< Updated upstream
 
 /*O que é Inicio */
 
@@ -106,6 +117,9 @@ footer {
 }
 
 /* O que é Fim */
+=======
+/* Footer Fim */
+>>>>>>> Stashed changes
 
 /* Movimentos inicio */
 
