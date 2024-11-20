@@ -32,4 +32,6 @@
     --dist-xxm: 2rem;
     --dist-l: 2.75rem;
     --dist-xl: 3.25rem;
+
+    overflow-x: hidden;
 }

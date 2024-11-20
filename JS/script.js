@@ -4,8 +4,11 @@ const textoMovimentos = [' A música rap pode ter começado no Bronx , mas há u
 ' O hip-hop é um movimento cultural que surgiu nos Estados Unidos nos anos 70, no Bronx. Um condado culturalmente diverso, mas também marcado pela desigualdade e violência urbana. Como uma forma de reação aos problemas sociais da época, difundiu-se o hip-hop, um canal para críticas fervorosas e diálogos interculturais.', 
 ' Do inglês “Graffiti”, refere-se à: “Ato de fazer uma inscrição caligrafada de elaboração mais complexa que a pichação ou um desenho pintado sobre um suporte em espaços públicos que não são previstos para esta finalidade”. Você provavelmente já viu, seja num muro qualquer ou na parede de um grande prédio, apesar dos termos maçantes, a arte do Grafite pode apresentar muito mais cores! É uma arte milenar, datada desde o tempo dos Romanos, mas mesmo com essa idade, sua instalação moderna só começou no uso por gangues estadunidenses como uma forma de marcar o terrítorio das mesmas, porém o graffiti evoluiu para uma forma de arte visual e crítica social, bem como o break e tudo o que veio a ser a cultura Hip Hop.',
 ' No Brasil, de fato, o break dance continua a crescer como um movimento cultural e esportivo. Com o reconhecimento oficial dos Jogos Olímpicos de Paris 2024, a modalidade cresceu ainda mais. De fato, novos patrocínios, academias especializadas e programas de formação para muitos jovens dançarinos foram lançados em todo o país. Além disso, as redes sociais são agora fundamental para a maioria dos b-boys e b-girls brasileiros. Eles gravam vídeos dos seus movimentos, participam em concursos on-line e mostram o breakdance para o mundo. Conclui -se que ainda é uma combinação perfeita entre inovação e tradição: ao mesmo tempo, o break dance é profundamente enraizado na resistência e na expressão.'];
-const imagensMovimentos = ['' ,'Imagens/Imagens/zin-movimento.png']
+
+const Movimentos = ['Brooklyn', 'Guetos', 'HipHop', 'Grafite', 'DiasAtuais'];
+
 imagemHeroMovimentos = document.getElementById('hero-movimento');
+imagemMovimentos = document.querySelectorAll('#movimentos .imagens img');
 textosMovimentos = document.querySelector('#movimentos .textos p');
 
 MovimentosItens = document.querySelectorAll('#movimentos > *');
@@ -22,4 +25,11 @@ function changeSelected(elem, val) {
     elem.classList.add('selected');
     
     textosMovimentos.innerHTML = textoMovimentos[val];
+
+    imagemMovimentos[0].src= `Imagens/Movimentos/${Movimentos[val]}/bigimg.png`;
+    imagemMovimentos[1].src= `Imagens/Movimentos/${Movimentos[val]}/img1.png`;
+    imagemMovimentos[2].src= `Imagens/Movimentos/${Movimentos[val]}/img2.png`;
+    imagemMovimentos[3].src= `Imagens/Movimentos/${Movimentos[val]}/img3.png`;
 }
+
+changeSelected(document.querySelector('#timeline > h3:nth-child(1)'), 0);
