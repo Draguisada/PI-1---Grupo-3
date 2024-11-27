@@ -26,9 +26,9 @@ h1 {
     width: fit-content;
 }
 
-.titulo * {
-    /* display: inline; */
-}
+/* .titulo * {
+    display: inline;
+} */
 
 .titulo > .background {
     background: linear-gradient(180deg, var(--cor-destaque-laranja) 0%, rgba(57,57,57,1) 100%);
@@ -37,6 +37,7 @@ h1 {
     z-index: 1;
     display: inline;
     /* text-shadow: 1px 1px 1px black; */
+    animation: balatroShake 0.7s 1;
 }
 
 /* Nav Bar Inicio */
@@ -108,8 +109,6 @@ footer {
     height: 100px; 
 }
 
-<<<<<<< Updated upstream
-
 /*O que é Inicio */
 
 #oquee > .titulo {
@@ -117,9 +116,9 @@ footer {
 }
 
 /* O que é Fim */
-=======
+
 /* Footer Fim */
->>>>>>> Stashed changes
+
 
 /* Movimentos inicio */
 
@@ -314,3 +313,47 @@ footer {
 }
 
 /* Sociocultura fim */
+
+.AnBalatroShake {
+    animation: balatroShake 0.7s 1 forwards;
+}
+
+.AnBalatroShakeError {
+    animation: balatroShakeError 0.9s 1;
+}
+
+@keyframes balatroShake  {
+    0% {
+        transform: rotate(0deg);
+    /* font-size: 1rem; */
+    }
+    25% {
+        transform:rotate(3deg);
+        /* font-size: 1.2rem; */
+    }
+    50% {
+        transform:rotate(-3deg);
+    }
+    100% {
+        transform:rotate(0deg);
+        /* font-size: 1rem; */
+    }
+}
+
+@keyframes balatroShakeError  {
+    0% {
+        transform: rotate(0deg);
+    /* font-size: 1rem; */
+    }
+    25% {
+        transform:rotate(6deg);
+        /* font-size: 1.2rem; */
+    }
+    50% {
+        transform:rotate(-6deg);
+    }
+    100% {
+        transform:rotate(0deg);
+        /* font-size: 1rem; */
+    }
+}

@@ -14,14 +14,19 @@ textosMovimentos = document.querySelector('#movimentos .textos p');
 MovimentosItens = document.querySelectorAll('#movimentos > *');
 
 function changeSelected(elem, val) {
+    elem.classList.remove('AnBalatroShakeError');
     if (elem.classList.contains('selected')) {
+        elem.classList.add('AnBalatroShakeError');
         return;
     }
 
     var section = document.getElementsByClassName(elem.classList[0]);
     for (i=0; i<section.length; i++) {
         section[i].classList.remove('selected');
+        section[i].classList.remove('AnBalatroShake');
+        section[i].classList.remove('AnBalatroShakeError');
     }
+    elem.classList.add('AnBalatroShake');
     elem.classList.add('selected');
     
     textosMovimentos.innerHTML = textoMovimentos[val];
@@ -30,6 +35,11 @@ function changeSelected(elem, val) {
     imagemMovimentos[1].src= `Imagens/Movimentos/${Movimentos[val]}/img1.png`;
     imagemMovimentos[2].src= `Imagens/Movimentos/${Movimentos[val]}/img2.png`;
     imagemMovimentos[3].src= `Imagens/Movimentos/${Movimentos[val]}/img3.png`;
+    // elem.classList.remove('balatroShake');
 }
 
 changeSelected(document.querySelector('#timeline > h3:nth-child(1)'), 0);
+
+
+
+//  animation: balatroShake 0.7s 1;
