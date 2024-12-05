@@ -37,7 +37,7 @@ h1 {
     z-index: 1;
     display: inline;
     /* text-shadow: 1px 1px 1px black; */
-    animation: balatroShake 0.7s 1;
+    /* animation: balatroShake 0.7s 1; */
 }
 
 /* Nav Bar Inicio */
