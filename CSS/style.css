@@ -80,7 +80,8 @@ nav ul {
 /* Header Início */
 
 .imagem-header {
-    width: 100%;
+    width: 500%;
+    height: auto;
 }
 
 /* Header Fim */
@@ -99,14 +100,19 @@ footer {
     z-index: 10;
     position: relative;
     background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+    width: 114%;
 }
 
 .footer-texto {
     font-size: 16px;
+    width: auto;
+    margin-left: 30%;
 }
 
 .footer-logo img {
     height: 100px; 
+    width: auto;
+    margin-right: 50%;
 }
 
 /*O que é Inicio */
