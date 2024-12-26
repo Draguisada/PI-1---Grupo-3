@@ -37,19 +37,21 @@ h1 {
     z-index: 1;
     display: inline;
     /* text-shadow: 1px 1px 1px black; */
-    animation: balatroShake 0.7s 1;
+    /* animation: balatroShake 0.7s 1; */
 }
 
 /* Nav Bar Inicio */
 
 nav {
-    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 55%, transparent 45%);
     width: 100%;
     display: flex;
+    position: sticky;
+    top: 0;
     padding: 1vh 0;
     align-items: center;
     z-index: 10;
-    position: relative;
+    /* position: relative; */
 }
 
 nav img {

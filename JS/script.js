@@ -7,11 +7,13 @@ const textoMovimentos = [' A música rap pode ter começado no Bronx , mas há u
 
 const Movimentos = ['Brooklyn', 'Guetos', 'HipHop', 'Grafite', 'DiasAtuais'];
 // Elementos
-imagemHeroMovimentos = document.getElementById('hero-movimento');
-imagemMovimentos = document.querySelectorAll('#movimentos .imagens img');
-textosMovimentos = document.querySelector('#movimentos .textos p');
+const imagemHeroMovimentos = document.getElementById('hero-movimento');
+const imagemMovimentos = document.querySelectorAll('#movimentos .imagens img');
+const textosMovimentos = document.querySelector('#movimentos .textos p');
 
-MovimentosItens = document.querySelectorAll('#movimentos > *');
+const MovimentosItens = document.querySelectorAll('#movimentos > *');
+
+
 
 function changeSelected(elem, val) {
     elem.classList.remove('AnBalatroShakeError');
@@ -43,4 +45,20 @@ changeSelected(document.querySelector('#timeline > h3:nth-child(1)'), 0);
 
 
 
+// TESTES NO GERAL
+
+// const nav = document.querySelector('nav');
 //  animation: balatroShake 0.7s 1;
+
+// function changeNavOpacity(opacity) {
+
+//     opacity = opacity*70/1000;
+
+//     nav.style.backgroundColor = 'rgba(13, 6, 1,' + opacity/100 + ')';
+// }
+
+// window.addEventListener("scroll", (event) => {
+//     let scroll = this.scrollY;
+//     changeNavOpacity(scroll);
+
+// })
