@@ -43,19 +43,21 @@ h1 {
 /* Nav Bar Inicio */
 
 nav {
-    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 70%, transparent 30%);
     width: 100%;
     display: flex;
     padding: 1vh 0;
     align-items: center;
     z-index: 10;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 nav img {
     left: 1%;
     top: 1%;
     height: 6vh;
+    position: relative;
 }
 
 nav ul li a {
@@ -79,9 +81,29 @@ nav ul {
 
 /* Header Início */
 
+header {
+    width: calc(100% + 13vw);
+    background-image: url(../Imagens/historia/banner_header.png);
+    background-repeat:repeat-x;
+    background-position-x: 50%;
+    
+}
+
 .imagem-header {
-    width: 500%;
-    height: auto;
+    width: 100%;
+    height: 50svh;
+    display: flex;
+    justify-content: center;
+
+    backdrop-filter: blur(5px);
+
+}
+
+.imagem-header  img {
+    left: 50%;
+    position: absolute;
+    height: inherit;
+    transform: translate(-50%, 0);
 }
 
 /* Header Fim */
@@ -204,20 +226,30 @@ footer {
 
 /* História inicio */
 
+#historia {
+    min-height: 30rem;
+}
+
 #historia .imagens img {
-    width: 100%;
-    
+    width: min-content;
+    height: 8%;
+
 }
 
 #historia .imagens {
     width: 100%;
-    display: grid;
-    grid-template-columns: 15.3vw 12.3vw 12.3vw 15.3vw;
-    grid-template-rows: 25vh 19vh;
-    align-items: flex-end;
-    column-gap: 1.5vw;
+    height: 3000px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    gap: 20px;
+    /* align-items: flex-end; */
+    /* column-gap: 1.5vw; */
 
-    
+    animation-iteration-count: infinite;
+    animation-duration: 80s;
+    animation-name: historiaMov;
+    animation-timing-function: linear;
 }
 
 #historia .titulo {
@@ -232,18 +264,6 @@ footer {
 #historia .imagens p {
     display: inline;
     
-}
-
-
-
-
-#historia .imagens img[alt*="Dre"] {
-    align-self: baseline;
-}
-
-#historia .imagens img:last-of-type {
-    max-height: 100%;
-    width: auto;
 }
 
 /* História Fim */
@@ -361,5 +381,17 @@ footer {
     100% {
         transform:rotate(0deg);
         /* font-size: 1rem; */
+    }
+}
+
+@keyframes historiaMov {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }

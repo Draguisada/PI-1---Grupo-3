@@ -1,6 +1,11 @@
 @font-face {
     font-family: UrbanGrafite;
-    src: url(Fontes/Urban\ Graffiti.ttf);
+    src: url(Fontes/UrbanGraffiti.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fontes/QuickSand.ttf);
 }
 
 :root {
@@ -22,7 +27,8 @@
     --tamanho-texto-subtitulo: 2rem;
 
     /* Fonte padrão do site inteiro */
-    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", "Open Sans", sans-serif;
+    font-weight: 500;
 
     /* Tamanho de distância entre objetos */
     --dist-xs: 0.25rem;
