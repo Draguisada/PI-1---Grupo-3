@@ -46,7 +46,8 @@ h1 {
 /* Nav Bar Inicio */
 
 nav {
-    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 70%, transparent 30%);
+    background-color: var(--cor-acao-vermelho);
+    color: white;
     width: 100%;
     display: flex;
     padding: 1vh 0;
@@ -66,7 +67,7 @@ nav img {
 
 nav ul li a {
     height: fit-content;
-    color: var(--cor-texto-link);
+    color: var(--cor-padrao);
 }
 
 nav ul {
@@ -139,6 +140,12 @@ footer {
     height: 100px; 
     width: auto;
     /* margin-right: 50%; */
+}
+
+.footer-logo {
+    /* height: 100px; 
+    width: auto; */
+    margin-right: 3%;
 }
 
 /*O que é Inicio */
