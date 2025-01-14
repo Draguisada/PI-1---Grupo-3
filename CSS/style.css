@@ -425,3 +425,28 @@ footer {
         transform: translateX(-100%);
     }
 }
+
+@media (max-width: 1000px) {
+    #historia .titulo {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    section {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8rem;
+    }
+
+    #sociocultura .main .imagens {
+        display: none;
+    }
+
+    #sociocultura .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
