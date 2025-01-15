@@ -18,7 +18,7 @@ const MovimentosItens = document.querySelectorAll('#movimentos > *');
 function changeSelected(elem, val) {
     elem.classList.remove('AnBalatroShakeError');
     if (elem.classList.contains('selected')) {
-        elem.classList.add('AnBalatroShakeError');
+        elem.classList.add('AnBalatroShakeError')
         return;
     }
     // Animação para deixar o botão mais vivo

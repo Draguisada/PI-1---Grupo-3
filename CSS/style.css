@@ -291,7 +291,7 @@ footer {
 
 #redessociais p {
     text-align: justify;
-    width: 80%;
+    width: 100%;
     justify-self: center;
 }
 
@@ -301,6 +301,7 @@ footer {
     padding-top: var(--dist-xl);
     flex-direction: column;
     align-items: center;
+    z-index: 4;
     
 }
 
