@@ -10,6 +10,9 @@ body {
     background-color: var(--cor-padrao);
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    /* margin-left: 13vw; */
 }
 
 .ignorar-margin {
@@ -43,26 +46,28 @@ h1 {
 /* Nav Bar Inicio */
 
 nav {
-    background-color: color-mix(in srgb, var(--cor-acao-vermelho) 55%, transparent 45%);
+    background-color: var(--cor-acao-vermelho);
+    color: white;
     width: 100%;
     display: flex;
-    position: sticky;
-    top: 0;
     padding: 1vh 0;
     align-items: center;
     z-index: 10;
-    /* position: relative; */
+    position: sticky;
+    top: 0;
+    font-weight: bold;
 }
 
 nav img {
     left: 1%;
     top: 1%;
     height: 6vh;
+    position: relative;
 }
 
 nav ul li a {
     height: fit-content;
-    color: var(--cor-texto-link);
+    color: var(--cor-padrao);
 }
 
 nav ul {
@@ -81,8 +86,29 @@ nav ul {
 
 /* Header Início */
 
+header {
+    width: calc(100% + 13vw);
+    background-image: url(../Imagens/historia/banner_header.png);
+    background-repeat:repeat-x;
+    background-position-x: 50%;
+    
+}
+
 .imagem-header {
     width: 100%;
+    height: 50svh;
+    display: flex;
+    justify-content: center;
+
+    backdrop-filter: blur(5px);
+
+}
+
+.imagem-header  img {
+    left: 50%;
+    position: absolute;
+    height: inherit;
+    transform: translate(-50%, 0);
 }
 
 /* Header Fim */
@@ -101,14 +127,25 @@ footer {
     z-index: 10;
     position: relative;
     background-color: color-mix(in srgb, var(--cor-acao-vermelho) 50%, transparent 50%);
+    width: 100vw;
 }
 
 .footer-texto {
     font-size: 16px;
+    width: auto;
+    margin-left: 30%;
 }
 
 .footer-logo img {
     height: 100px; 
+    width: auto;
+    /* margin-right: 50%; */
+}
+
+.footer-logo {
+    /* height: 100px; 
+    width: auto; */
+    margin-right: 3%;
 }
 
 /*O que é Inicio */
@@ -200,20 +237,31 @@ footer {
 
 /* História inicio */
 
+#historia {
+    min-height: 30rem;
+}
+
 #historia .imagens img {
-    width: 100%;
-    
+    width: min-content;
+    height: 8%;
+
 }
 
 #historia .imagens {
     width: 100%;
-    display: grid;
-    grid-template-columns: 15.3vw 12.3vw 12.3vw 15.3vw;
-    grid-template-rows: 25vh 19vh;
-    align-items: flex-end;
-    column-gap: 1.5vw;
+    height: 3000px;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    gap: 20px;
+    /* align-items: flex-end; */
+    /* column-gap: 1.5vw; */
 
-    
+    animation-iteration-count: infinite;
+    animation-duration: 80s;
+    animation-name: historiaMov;
+    animation-timing-function: linear;
 }
 
 #historia .titulo {
@@ -230,19 +278,11 @@ footer {
     
 }
 
-
-
-
-#historia .imagens img[alt*="Dre"] {
-    align-self: baseline;
-}
-
-#historia .imagens img:last-of-type {
-    max-height: 100%;
-    width: auto;
-}
-
 /* História Fim */
+
+.mov {
+    z-index: 3;
+}
 
 /* redessociais */
 #redessociais {
@@ -256,15 +296,18 @@ footer {
 }
 
 #redessociais .videos {
-    justify-content: space-between;
     display: flex;
+    justify-content: center;
     padding-top: var(--dist-xl);
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-#redessociais .videos video {
-    width: 16vw;
-    min-width: 200px;
+#redessociais .videos h3 {
+    text-align: center;
 }
+
 #movimentos .imagens{
     max-width: 80%;
     max-height: 600px;
@@ -324,6 +367,17 @@ footer {
     animation: balatroShakeError 0.9s 1;
 }
 
+#dancar {
+    animation-name: balatroShake;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    text-decoration: none;
+    color: #4e00ad;
+    font-weight: bolder;
+}
+
 @keyframes balatroShake  {
     0% {
         transform: rotate(0deg);
@@ -357,5 +411,42 @@ footer {
     100% {
         transform:rotate(0deg);
         /* font-size: 1rem; */
+    }
+}
+
+@keyframes historiaMov {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1000px) {
+    #historia .titulo {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    section {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8rem;
+    }
+
+    #sociocultura .main .imagens {
+        display: none;
+    }
+
+    #sociocultura .main {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
