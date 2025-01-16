@@ -257,6 +257,7 @@ footer {
     gap: 20px;
     /* align-items: flex-end; */
     /* column-gap: 1.5vw; */
+    z-index: -1;
 
     animation-iteration-count: infinite;
     animation-duration: 80s;
@@ -325,7 +326,7 @@ footer {
 }
 
 #movimentos .imagens img:nth-of-type(3) {
-    width: 400px;
+    width: fit-content;
 }
 
 
